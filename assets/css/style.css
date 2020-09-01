@@ -1,0 +1,27 @@
+body {
+    background-image: url("https://images.alphacoders.com/925/thumb-1920-925465.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+}
+
+
+
+.nav-custom {
+    background-color: #23192c;
+    
+}
+
+.nav-custom .navbar-brand, 
+.nav-custom .navbar-text{ 
+    color: white; 
+} 
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
