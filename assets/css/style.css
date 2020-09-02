@@ -1,12 +1,16 @@
 body {
-    /*background-image: url("https://images.alphacoders.com/925/thumb-1920-925465.png");
+    /*background-image: url("");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;*/
     background-color: #191919;
+    font-family: 'Bebas Neue', cursive;
 }
 
-
+footer {
+    background-color: white;
+    margin-top: 40px;
+}
 
 .nav-custom {
     background-color: #191919;
@@ -14,12 +18,10 @@ body {
 
 .nav-custom .navbar-brand, 
 .nav-custom .navbar-text {
-    font-family: 'Bebas Neue', cursive;
     color: white; 
     font-size: xx-large;
 } 
 .nav-custom .navbar-nav .nav-link{
-    font-family: 'Bebas Neue', cursive;
     font-size: large;
 }
 
@@ -29,6 +31,42 @@ body {
     color: #ffffff;
 }
 
-.container {
+.aboutme-container {
     background-color: #ffffff;
+    padding-bottom: 20px;
 }
+
+.banner-text {
+    font-size: 100px;
+    color: white;
+}
+
+.banner-text-large {
+    font-size: 210px;
+    color: white;
+    text-align: center;
+}
+
+.social-container {
+    text-align: center;
+    margin-top: 48px;
+    filter: invert(1);
+}
+
+.social-container:hover {
+    opacity: 75%;
+}
+
+@media screen and (max-width: 991px) {
+    /*Reduces size of font on banner text*/
+    .banner-text-large {
+    font-size: 150px;
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    /*Aligns banner text to left for more pleasent look on mobile devices*/
+    .banner-text-large {
+    text-align: left;
+    }
+  }
