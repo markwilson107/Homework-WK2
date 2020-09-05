@@ -1,9 +1,9 @@
 body {
-    /*background-image: url("");
+    background-image: url("../../assets/images/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position-x: center;*/
-    background-color: #191919;
+    background-size: cover;
+    background-position-x: center;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -13,15 +13,19 @@ footer {
     padding-top: 20px;
 }
 
+/* change the color of the navbar */
 .nav-custom {
-    background-color: #191919;
+    background-color: #141414;
 }
 
+/* change navbar brand text size and colour */
 .nav-custom .navbar-brand, 
 .nav-custom .navbar-text {
     color: white; 
     font-size: xx-large;
 } 
+
+/* change navbar text/link size */
 .nav-custom .navbar-nav .nav-link{
     font-size: large;
 }
@@ -36,20 +40,26 @@ footer {
     font-size: x-large;
 }
 
-.aboutme-container {
-    background-color: #ffffff;
-    padding-bottom: 20px;
-}
-
 .banner-text {
     font-size: 100px;
     color: white;
+    margin-top:40px;
 }
 
 .banner-text-large {
     font-size: 210px;
     color: white;
     text-align: center;
+    margin-top:40px;
+}
+
+.aboutme-container {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.aboutme-container h1 {
+    padding-left: 20px;
 }
 
 .social-container {
@@ -58,20 +68,38 @@ footer {
     filter: invert(1);
 }
 
+/* hover effect for social links*/
 .social-container:hover {
     opacity: 75%;
 }
 
-.portfolio-container {
+.portfolio-container, 
+.portfolio-column {
     padding: 20px;
 }
 
-.portfolio-container:hover {
+.portfolio-container h1 {
+    padding-left: 20px;
+    color: white;
+}
+
+.portfolio-column {
+    padding: 20px;
+}
+
+/* hover effect for portfolio images */
+.portfolio-column:hover {
     opacity: 75%;
 }
 
-.white-text {
-    color: white;
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.form-control {
+    font-family: arial;
 }
 
 @media screen and (max-width: 991px) {
@@ -79,11 +107,19 @@ footer {
     .banner-text-large {
     font-size: 150px;
     }
-  }
+}
 
 @media screen and (max-width: 767px) {
-    /*Aligns banner text to left for more pleasent look on mobile devices*/
+    /*Aligns banner text to left for better look on mobile devices*/
     .banner-text-large {
     text-align: left;
+    margin-top: 0;
     }
-  }
+}
+
+@media screen and (max-width: 575px) {
+    /*Aligns top of contact form with navbar for better look on mobile devices*/
+    .contact-form {
+        margin-top: 0;
+    }
+}
