@@ -58,6 +58,10 @@ footer {
     padding: 20px;
 }
 
+.aboutme-container img {
+    max-height:300px;
+}
+
 .aboutme-container h1 {
     padding-left: 20px;
 }
@@ -115,11 +119,20 @@ footer {
     text-align: left;
     margin-top: 0;
     }
+    .aboutme-container p {
+        font-size: x-large;
+    }
 }
 
 @media screen and (max-width: 575px) {
     /*Aligns top of contact form with navbar for better look on mobile devices*/
     .contact-form {
         margin-top: 0;
+    }
+    .banner-text {
+        font-size: 20vw;
+    }
+    .banner-text-large {
+        font-size: 35vw;
     }
 }
