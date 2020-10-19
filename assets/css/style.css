@@ -1,9 +1,5 @@
 body {
-    background-image: url("../../assets/images/background.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position-x: center;
+    background-color: black;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -15,7 +11,11 @@ footer {
 
 /* change the color of the navbar */
 .nav-custom {
-    background-color: #141414;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav-custom-home {
+    background-color: rgb(0, 0, 0,0);
 }
 
 /* change navbar brand text size and colour */
@@ -36,40 +36,84 @@ footer {
     color: #ffffff;
 }
 
-.title-text-small {
-    font-size: x-large;
-}
-
-.banner-text {
-    font-size: 100px;
+.banner-text-name {
+    font-size: 40px;
     color: white;
-    margin-top:40px;
-}
-
-.banner-text-large {
-    font-size: 210px;
-    color: white;
+    background-color: #ffd5b5;    
     text-align: center;
-    margin-top:40px;
+    padding-top:150px;
+    height:0px;
+    font-family: 'Major Mono Display', monospace;
+    
+}
+.banner-text {
+    font-size: 70px;
+    color: white;
+    background-color: #ffd5b5;    
+    text-align: center;
+    padding-top:90px;
+    height:0px;
+    font-family: 'Major Mono Display', monospace;
+    
+}
+
+.banner-container {
+    min-height: 100vh;
+    margin-top:-10px;
+    background-image: url("../../assets/images/mountains-background.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center ;
+    background-color: #fbcfae;
 }
 
 .aboutme-container {
-    background-color: #ffffff;
+    background-color: none;
     padding: 20px;
+    padding-bottom:-200px;
 }
 
-.aboutme-container img {
-    max-height:300px;
+.aboutme-img {
+    max-width:250px;
+    min-width: 100px;
+    border-radius: 50%;
 }
 
-.aboutme-container h1 {
-    padding-left: 20px;
+.mobile-aboutme-img {
+    display:none;
+    max-width:300px;
+    min-width: 100px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.aboutme-img-box {
+    margin-left: auto;
+    margin-right: auto; 
+    justify-content: center;
+}
+
+.aboutme-card {
+    padding:20px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:800px;
 }
 
 .social-container {
     text-align: center;
-    margin-top: 48px;
+    margin-top: 20px;
     filter: invert(1);
+
+}
+
+.social-container img {
+    padding:20px;    
 }
 
 /* hover effect for social links*/
@@ -99,33 +143,47 @@ footer {
 .contact-form {
     background-color: white;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 .form-control {
     font-family: arial;
 }
 
-@media screen and (max-width: 991px) {
-    /*Reduces size of font on banner text*/
+/*@media screen and (max-width: 991px) {
+
     .banner-text-large {
     font-size: 150px;
     }
-}
-
-@media screen and (max-width: 767px) {
-    /*Aligns banner text to left for better look on mobile devices*/
-    .banner-text-large {
-    text-align: left;
-    margin-top: 0;
-    }
-    .aboutme-container p {
-        font-size: x-large;
-    }
-}
+}*/
 
 @media screen and (max-width: 575px) {
-    /*Aligns top of contact form with navbar for better look on mobile devices*/
+    .justify-content-center {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .banner-text {
+        font-size:50px;
+    }
+    .banner-text-name {
+        font-size:30px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+
+    .aboutme-img {
+    display:none;
+    }
+    .mobile-aboutme-img {
+        display:block;
+        }
+}
+
+/*@media screen and (max-width: 575px) {
+    
     .contact-form {
         margin-top: 0;
     }
@@ -135,4 +193,4 @@ footer {
     .banner-text-large {
         font-size: 35vw;
     }
-}
+}*/
