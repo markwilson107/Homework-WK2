@@ -17,7 +17,8 @@
 
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark nav-custom-home fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark nav-custom-home nav-fader fixed-top">
+        <a class="navbar-brand" href="#">Mark Wilson</a>
         <button class="navbar-toggler ml-auto collapsed" type="button" data-toggle="collapse"
             data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -26,100 +27,162 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <a class="nav-link active" href="">About</a>
-                <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                <a class="nav-link" href="./contact.html">Contact</a>
+                <a class="nav-link" href="./portfolio.html">poRtfoilio</a>
+                <a class="nav-link" href="./contact.html">contAct</a>
             </div>
         </div>
     </nav>
 
-    <!--Banner-->
-    <div class="banner-text-name">
-       Mark Wilson
+    <!--Scroll Down Arrow-->
+    <div class="arrow bounce">
+        <img src="./assets/images/scrol-down.png" class="scroll-arrow" />
     </div>
-    <div class="banner-text">
-        Web Development
-    </div>
-    <div class="container-fluid banner-container">
 
-    </div>
-    <div class="mobile-aboutme-img fade">
-        <img src="./assets/images/Linkdin_s.jpg" class="mobile-aboutme-img" alt="Profile image">
-    </div>
-    <!--About Me Container-->
-    <main class="container aboutme-container fade">
-        <div class="card mb-3 aboutme-card">
-            <div class="row no-gutters">
-                <div class="col-md-4 aboutme-img-box">
-                    <img src="./assets/images/Linkdin_s.jpg" class="card-img aboutme-img" alt="Profile image">
+    <!--Resume Modal-->
+    <div class="modal resume-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Resume - Mark Wilson</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title aboutme-card-title">Bio</h5>
-                        <p class="card-text">Hello!<br />I am Mark Wilson, a Web Developer focused on crafting high
-                            quality,
-                            responsive
-                            websites using the latest tools available. Being equiped with the most up-to-date skills
-                            and
-                            knowledge means I am ready to take on any challenge put in front of me.
+                <div class="modal-body">
+                    <embed src="./assets/pdf/RESUME2020.pdf" width="100%" height="100%" />
+                </div>
+                <div class="modal-footer">
 
-                        </p>
-                        <p class="card-text"><small class="text-muted"> Skill: Full-Stack
-                                <br />
-                                Location: Perth, Western Australia</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Banner-->
+    <main class="container-fluid banner-container">
+        <div class="banner-text-name">
+            Hello, im <span class="banner-text-name-bold">MarK WilsoN</span>.<br /><br />
+            im a full-stack<br />
+
+        </div>
+        <div class="banner-text">
+            WeB DeVeloper.
+        </div>
+
+        <div class="fader">
+            <img src="./assets/images/Linkdin_s.jpg" class="mobile-aboutme-img " alt="Profile image">
+        </div>
+
+        <!--About Me Container-->
+        <section class="container aboutme-container fader">
+            <h1 class="title">ABout me</h1><br />
+            <div class="card mb-3 aboutme-card">
+                <div class="row no-gutters">
+                    <div class="col-md-4 aboutme-img-box">
+                        <img src="./assets/images/Linkdin_s.jpg" class="card-img aboutme-img" alt="Profile image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <p class="card-text">Hello!<br /><br />I am Mark Wilson, a Web Developer focused on crafting
+                                high
+                                quality,
+                                responsive
+                                websites using the latest tools available. Being equiped with the most up-to-date skills
+                                and
+                                knowledge means I am ready to take on any challenge put in front of me.
+
+                            </p>
+                            <p class="card-text"><small class="text-muted"> Full-Stack<br />Web Developer
+                                    <br />
+                                    Location: Perth, Western Australia</small></p>
+                            <nav style="text-align:center;">
+                                <a href="https://github.com/markwilson107" target="_blank">
+                                    <img class="social-img" style="float:left;"
+                                        src="data:image/svg+xml;base64,PHN2ZyBpZD0iQm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTEyIC41Yy02LjYzIDAtMTIgNS4yOC0xMiAxMS43OTIgMCA1LjIxMSAzLjQzOCA5LjYzIDguMjA1IDExLjE4OC42LjExMS44Mi0uMjU0LjgyLS41NjcgMC0uMjgtLjAxLTEuMDIyLS4wMTUtMi4wMDUtMy4zMzguNzExLTQuMDQyLTEuNTgyLTQuMDQyLTEuNTgyLS41NDYtMS4zNjEtMS4zMzUtMS43MjUtMS4zMzUtMS43MjUtMS4wODctLjczMS4wODQtLjcxNi4wODQtLjcxNiAxLjIwNS4wODIgMS44MzggMS4yMTUgMS44MzggMS4yMTUgMS4wNyAxLjgwMyAyLjgwOSAxLjI4MiAzLjQ5NS45ODEuMTA4LS43NjMuNDE3LTEuMjgyLjc2LTEuNTc3LTIuNjY1LS4yOTUtNS40NjYtMS4zMDktNS40NjYtNS44MjcgMC0xLjI4Ny40NjUtMi4zMzkgMS4yMzUtMy4xNjQtLjEzNS0uMjk4LS41NC0xLjQ5Ny4xMDUtMy4xMjEgMCAwIDEuMDA1LS4zMTYgMy4zIDEuMjA5Ljk2LS4yNjIgMS45OC0uMzkyIDMtLjM5OCAxLjAyLjAwNiAyLjA0LjEzNiAzIC4zOTggMi4yOC0xLjUyNSAzLjI4NS0xLjIwOSAzLjI4NS0xLjIwOS42NDUgMS42MjQuMjQgMi44MjMuMTIgMy4xMjEuNzY1LjgyNSAxLjIzIDEuODc3IDEuMjMgMy4xNjQgMCA0LjUzLTIuODA1IDUuNTI3LTUuNDc1IDUuODE3LjQyLjM1NC44MSAxLjA3Ny44MSAyLjE4MiAwIDEuNTc4LS4wMTUgMi44NDYtLjAxNSAzLjIyOSAwIC4zMDkuMjEuNjc4LjgyNS41NiA0LjgwMS0xLjU0OCA4LjIzNi01Ljk3IDguMjM2LTExLjE3MyAwLTYuNTEyLTUuMzczLTExLjc5Mi0xMi0xMS43OTJ6Ii8+PC9zdmc+"
+                                        alt="Github" />
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/markwilson107/" target="_blank">
+                                    <img class="social-img"
+                                        src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0yNTYgMGMtMTQxLjM2MzI4MSAwLTI1NiAxMTQuNjM2NzE5LTI1NiAyNTZzMTE0LjYzNjcxOSAyNTYgMjU2IDI1NiAyNTYtMTE0LjYzNjcxOSAyNTYtMjU2LTExNC42MzY3MTktMjU2LTI1Ni0yNTZ6bS03NC4zOTA2MjUgMzg3aC02Mi4zNDc2NTZ2LTE4Ny41NzQyMTloNjIuMzQ3NjU2em0tMzEuMTcxODc1LTIxMy4xODc1aC0uNDA2MjVjLTIwLjkyMTg3NSAwLTM0LjQ1MzEyNS0xNC40MDIzNDQtMzQuNDUzMTI1LTMyLjQwMjM0NCAwLTE4LjQwNjI1IDEzLjk0NTMxMy0zMi40MTAxNTYgMzUuMjczNDM3LTMyLjQxMDE1NiAyMS4zMjgxMjYgMCAzNC40NTMxMjYgMTQuMDAzOTA2IDM0Ljg1OTM3NiAzMi40MTAxNTYgMCAxOC0xMy41MzEyNSAzMi40MDIzNDQtMzUuMjczNDM4IDMyLjQwMjM0NHptMjU1Ljk4NDM3NSAyMTMuMTg3NWgtNjIuMzM5ODQ0di0xMDAuMzQ3NjU2YzAtMjUuMjE4NzUtOS4wMjczNDMtNDIuNDE3OTY5LTMxLjU4NTkzNy00Mi40MTc5NjktMTcuMjIyNjU2IDAtMjcuNDgwNDY5IDExLjYwMTU2My0zMS45ODgyODIgMjIuODAwNzgxLTEuNjQ4NDM3IDQuMDA3ODEzLTIuMDUwNzgxIDkuNjA5Mzc1LTIuMDUwNzgxIDE1LjIxNDg0NHYxMDQuNzVoLTYyLjM0Mzc1cy44MTY0MDctMTY5Ljk3NjU2MiAwLTE4Ny41NzQyMTloNjIuMzQzNzV2MjYuNTU4NTk0YzguMjg1MTU3LTEyLjc4MTI1IDIzLjEwOTM3NS0zMC45NjA5MzcgNTYuMTg3NS0zMC45NjA5MzcgNDEuMDE5NTMxIDAgNzEuNzc3MzQ0IDI2LjgwODU5MyA3MS43NzczNDQgODQuNDIxODc0em0wIDAiLz48L3N2Zz4="
+                                        alt="Linkedin" />
+                                </a>
+
+                                <img class="social-img resume" data-toggle="modal" data-target=".resume-modal" style="float:right;" src="./assets/images/resume.png"
+                                    alt="Portfolio" />
+
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
 
-    <!--Social Container-->
-    <nav class="container fade" style="max-width:800px">
+    <!--Portfolio-->
+    <section class="container portfolio-container">
+        <div class="row">
+            <h1 class="title fader">PoRtfolio</h1>
+        </div><br />
+        <div class="row portfolio-grid">
+
+        </div>
+    </section>
+
+    <!--Contact Form-->
+    <form class="container contact-form fader">
+        <h1 class="title">coNtAct</h1><br />
         <!--Row 1-->
         <div class="row">
+
             <!--Column 1-->
-            <div class="col-4 social-container">
-                <a href="https://github.com/markwilson107" target="_blank">
-                    <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTEyIC41Yy02LjYzIDAtMTIgNS4yOC0xMiAxMS43OTIgMCA1LjIxMSAzLjQzOCA5LjYzIDguMjA1IDExLjE4OC42LjExMS44Mi0uMjU0LjgyLS41NjcgMC0uMjgtLjAxLTEuMDIyLS4wMTUtMi4wMDUtMy4zMzguNzExLTQuMDQyLTEuNTgyLTQuMDQyLTEuNTgyLS41NDYtMS4zNjEtMS4zMzUtMS43MjUtMS4zMzUtMS43MjUtMS4wODctLjczMS4wODQtLjcxNi4wODQtLjcxNiAxLjIwNS4wODIgMS44MzggMS4yMTUgMS44MzggMS4yMTUgMS4wNyAxLjgwMyAyLjgwOSAxLjI4MiAzLjQ5NS45ODEuMTA4LS43NjMuNDE3LTEuMjgyLjc2LTEuNTc3LTIuNjY1LS4yOTUtNS40NjYtMS4zMDktNS40NjYtNS44MjcgMC0xLjI4Ny40NjUtMi4zMzkgMS4yMzUtMy4xNjQtLjEzNS0uMjk4LS41NC0xLjQ5Ny4xMDUtMy4xMjEgMCAwIDEuMDA1LS4zMTYgMy4zIDEuMjA5Ljk2LS4yNjIgMS45OC0uMzkyIDMtLjM5OCAxLjAyLjAwNiAyLjA0LjEzNiAzIC4zOTggMi4yOC0xLjUyNSAzLjI4NS0xLjIwOSAzLjI4NS0xLjIwOS42NDUgMS42MjQuMjQgMi44MjMuMTIgMy4xMjEuNzY1LjgyNSAxLjIzIDEuODc3IDEuMjMgMy4xNjQgMCA0LjUzLTIuODA1IDUuNTI3LTUuNDc1IDUuODE3LjQyLjM1NC44MSAxLjA3Ny44MSAyLjE4MiAwIDEuNTc4LS4wMTUgMi44NDYtLjAxNSAzLjIyOSAwIC4zMDkuMjEuNjc4LjgyNS41NiA0LjgwMS0xLjU0OCA4LjIzNi01Ljk3IDguMjM2LTExLjE3MyAwLTYuNTEyLTUuMzczLTExLjc5Mi0xMi0xMS43OTJ6Ii8+PC9zdmc+"
-                        alt="Github" height=150 />
-                </a>
-            </div>
-            <!--Column 2-->
-            <div class="col-4 social-container">
-                <a href="https://www.linkedin.com/in/markwilson107/" target="_blank">
-                    <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0yNTYgMGMtMTQxLjM2MzI4MSAwLTI1NiAxMTQuNjM2NzE5LTI1NiAyNTZzMTE0LjYzNjcxOSAyNTYgMjU2IDI1NiAyNTYtMTE0LjYzNjcxOSAyNTYtMjU2LTExNC42MzY3MTktMjU2LTI1Ni0yNTZ6bS03NC4zOTA2MjUgMzg3aC02Mi4zNDc2NTZ2LTE4Ny41NzQyMTloNjIuMzQ3NjU2em0tMzEuMTcxODc1LTIxMy4xODc1aC0uNDA2MjVjLTIwLjkyMTg3NSAwLTM0LjQ1MzEyNS0xNC40MDIzNDQtMzQuNDUzMTI1LTMyLjQwMjM0NCAwLTE4LjQwNjI1IDEzLjk0NTMxMy0zMi40MTAxNTYgMzUuMjczNDM3LTMyLjQxMDE1NiAyMS4zMjgxMjYgMCAzNC40NTMxMjYgMTQuMDAzOTA2IDM0Ljg1OTM3NiAzMi40MTAxNTYgMCAxOC0xMy41MzEyNSAzMi40MDIzNDQtMzUuMjczNDM4IDMyLjQwMjM0NHptMjU1Ljk4NDM3NSAyMTMuMTg3NWgtNjIuMzM5ODQ0di0xMDAuMzQ3NjU2YzAtMjUuMjE4NzUtOS4wMjczNDMtNDIuNDE3OTY5LTMxLjU4NTkzNy00Mi40MTc5NjktMTcuMjIyNjU2IDAtMjcuNDgwNDY5IDExLjYwMTU2My0zMS45ODgyODIgMjIuODAwNzgxLTEuNjQ4NDM3IDQuMDA3ODEzLTIuMDUwNzgxIDkuNjA5Mzc1LTIuMDUwNzgxIDE1LjIxNDg0NHYxMDQuNzVoLTYyLjM0Mzc1cy44MTY0MDctMTY5Ljk3NjU2MiAwLTE4Ny41NzQyMTloNjIuMzQzNzV2MjYuNTU4NTk0YzguMjg1MTU3LTEyLjc4MTI1IDIzLjEwOTM3NS0zMC45NjA5MzcgNTYuMTg3NS0zMC45NjA5MzcgNDEuMDE5NTMxIDAgNzEuNzc3MzQ0IDI2LjgwODU5MyA3MS43NzczNDQgODQuNDIxODc0em0wIDAiLz48L3N2Zz4="
-                        alt="Linkedin" height=150 />
-                </a>
-            </div>
-            <!--Column 3-->
-            <div class="col-4 social-container">
-                <a href="./portfolio.html">
-                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMjU2IDI1NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjU2IDI1NjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwb2x5Z29uIHBvaW50cz0iNzkuMDkzLDAgNDguOTA3LDMwLjE4NyAxNDYuNzIsMTI4IDQ4LjkwNywyMjUuODEzIDc5LjA5MywyNTYgMjA3LjA5MywxMjggCQkiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg=="
-                        height=140 alt="Portfolio" />
-                </a>
+            <div class="col-12 col-md-8">
+                <!--Name-->
+                <div class="form-group">
+                    <label for="InputName">Name</label>
+                    <input type="text" class="form-control" id="InputName" placeholder="Name">
+                </div>
+                <!--Email-->
+                <div class="form-group">
+                    <label for="InputEmail">Email</label>
+                    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
+                        placeholder="Email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <!--Message-->
+                <div class="form-group">
+                    <label for="FormControlTextarea">Message</label>
+                    <textarea class="form-control" id="FormControlTextarea" rows="3" placeholder="Message"></textarea>
+                </div>
+                <!--Submit Button-->
+                <button type="submit" class="btn btn-dark">Submit</button>
             </div>
         </div>
-    </nav>
+    </form>
+
 
     <footer>
         <!--Footer Container-->
-        <div class="container">
+        <div class="container footer-container">
             <!--Row 1-->
             <div class="row">
                 <!--Column 1 (Mark Wilson)-->
                 <div class="col-12 col-md-4">
-                    <h2>Mark Wilson</h2>
+                    <h3>MarK WilsoN</h3>
                     <p>
-                        Web Development portfolio <br />
-                        and contact information. <br />
+                        Web Development Portfolio.<br />
                         <a href="https://github.com/markwilson107" target="_blank">Github</a> |
-                        <a href="https://www.linkedin.com/in/markwilson107/" target="_blank">Linkedin</a>
+                        <a href="https://www.linkedin.com/in/markwilson107/" target="_blank">Linkedin</a> |
+                        <a href="">Resume</a>
                     </p>
 
                 </div>
                 <!--Column 2 (Explore)-->
                 <div class="col-12 col-md-4">
-                    <h2>Explore</h2>
+                    <h3>eXPlore</h3>
                     <ul>
                         <li><a href="./index.html">About</a></li>
                         <li><a href="./portfolio.html">Portfolio</a></li>
@@ -128,7 +191,7 @@
                 </div>
                 <!--Column 3 (Contact)-->
                 <div class="col-12 col-md-4">
-                    <h2>Contact</h2>
+                    <h3>coNtAct</h3>
                     <ul>
                         <li><a href="mailto:markwilson107@hotmail.com">Email</a></li>
                         <li><a href="Tel:61492803794">Call</a></li>
@@ -144,10 +207,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="./assets/script/navbar-scroll.js"></script>
+    <script src="./assets/script/scroll-effect.js"></script>
     <script src="./assets/script/script.js"></script>
 </body>
 
