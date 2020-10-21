@@ -284,13 +284,13 @@ footer {
 }
 @media screen and (max-width: 767px) {
     .banner-text {
-        font-size:8vmin;
+        font-size:10vmin;
     }
     .banner-text-name-bold {
-        font-size:5vmin;
+        font-size:6vmin;
     }
     .banner-text-name{
-        font-size:3vmin;
+        font-size:5vmin;
     }
     .aboutme-img-box {
         display:none;
