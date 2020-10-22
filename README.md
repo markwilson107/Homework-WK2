@@ -1,13 +1,8 @@
 # Portfolio - Mark Wilson
-
-This weeks homework required us to create a portfolio website and deploy it with github pages. The website needed to have 3 pages: 
-index.html (About me)
-portfolio.html (Portfolio)
-contact.html (Contact)
-
-All three pages must have a consistent navbar and be mobile responsive. Creating responsive layouts was done using Bootstraps external css linked to out website. External Javascript was also required to make the menu system functional.
-
-The styling of each page is done by creating and linking the style.css stylesheet. But before linking that it is important to link reset.css style sheet to make sure the look is consistent across browsers.
+A single page portfolio projecting containing links to all my work and information about me including how I can be contacted.
+The website uses JQuery to create auto scroll effects as well as fade in effects. The styling is done by linking bootstrap.css and using style.css for my own customization and styling. 
 
 Deployed application:
-https://markwilson107.github.io/Homework-WK2/
+https://markwilson107.github.io/Portfolio/
+
+![Image of Application](https://github.com/markwilson107/Portfolio/blob/master/assets/images/Deployed-application.png)

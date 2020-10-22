@@ -9,92 +9,110 @@ footer {
     padding-top: 20px;
 }
 
+/*Titles*/
+
 .title {
     font-size: xx-large;
     color: white;
+    text-shadow: 1px 1px 3px black;
 }
+
+/*Modals*/
 
 .resume-modal {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width:100%;
+    width: 100%;
 }
 
 .resume-modal .modal-dialog .modal-content .modal-body {
-    height:800px;
+    height: 800px;
+}
+
+/*Resume object*/
+
+.resume {
+    width:100%;
+    height:100%;
 }
 
 /*Scroll Arrow*/
+
 .arrow {
     text-align: center;
     display: block;
-    position: fixed; /* Fixed/sticky position */
-  bottom: 100px; /* Place the button at the bottom of the page */
-  left:50%;
-  z-index: 99; 
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  }
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
 
-  .scroll-arrow {
-      width:60px;
-      margin-left:-30px;
-  }
+.scroll-arrow {
+    width: 60px;
+    margin-left: -30px;
+}
 
-  .bounce {
+.bounce {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
-  }
-  
-  @keyframes bounce {
+}
+
+/*Arrow bounce effect*/
+
+@keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
     40% {
-      transform: translateY(-30px);
+        transform: translateY(-30px);
     }
     60% {
-      transform: translateY(-15px);
+        transform: translateY(-15px);
     }
-  }
+}
 
 /* change the color of the navbar */
+
 .nav-custom {
     background-color: rgb(0, 0, 0);
 }
 
 .nav-custom-home {
-    background-color: rgb(0, 0, 0,0);
+    background-color: rgb(0, 0, 0, 0);
 }
 
 /* change navbar brand text size and colour */
-.navbar-brand, 
-.navbar-text {
-    color: white; 
+
+.navbar-brand, .navbar-text {
+    color: white;
     font-size: medium;
-} 
+}
 
 /* change navbar text/link size */
-.nav-link{
+
+.nav-link {
     font-size: small;
 }
 
 /* change the color of active or hovered links */
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
+
+.navbar-custom .nav-item.active .nav-link, .navbar-custom .nav-item:hover .nav-link {
     color: #ffffff;
 }
+
+/*Banner*/
 
 .banner-text-name {
     font-size: 15px;
     color: white;
-    /*background-color: #ffd5b5;    */
     text-align: center;
-    padding-top:150px;
+    padding-top: 150px;
     font-family: 'Major Mono Display', monospace;
-
+    text-shadow: 1px 1px 3px black;
 }
 
 .banner-text-name-bold:hover {
@@ -111,9 +129,9 @@ footer {
     font-size: 70px;
     color: white;
     text-align: center;
-    padding-top:40px;
+    padding-top: 40px;
     font-family: 'Major Mono Display', monospace;
-
+    text-shadow: 1px 1px 3px black;
 }
 
 .banner-container {
@@ -128,15 +146,16 @@ footer {
     background-color: black;
 }
 
+/*About me container*/
+
 .aboutme-container {
     background-color: none;
-
-    margin-top:200px;
-    max-width:900px;
+    margin-top: 200px;
+    max-width: 900px;
 }
 
 .aboutme-img {
-    max-width:200px;
+    max-width: 200px;
     min-width: 50px;
     border-radius: 50%;
 }
@@ -147,13 +166,13 @@ footer {
 }
 
 .mobile-aboutme-img {
-    display:none;
-    max-width:150px;
+    display: none;
+    max-width: 150px;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
-    margin-top:300px;
+    margin-top: 300px;
 }
 
 .aboutme-card {
@@ -162,30 +181,36 @@ footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/*Social Icons*/
+
 .social-img {
-    height:100px;
+    height: 100px;
     text-align: center;
+    cursor: pointer;
 }
 
-/* hover effect for social links*/
 .social-img:hover {
     opacity: 75%;
 }
 
+/*Skills (for future use)*/
+
 .skills-container {
     padding-top: 40px;
-    text-align:center;
+    text-align: center;
     max-width: 900px;
 }
 
 .skills-img {
-    height:150px;
+    height: 150px;
     filter: invert(1);
 }
 
+/*Portfolio*/
+
 .portfolio-container {
     margin-top: 100px;
-    max-width:900px;  
+    max-width: 900px;
 }
 
 .portfolio-container h1 {
@@ -194,7 +219,7 @@ footer {
 
 .portfolio-img {
     border-radius: 1%;
-    padding-top:100%; 
+    padding-top: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -212,10 +237,10 @@ footer {
     visibility: hidden;
     margin-top: -100%;
     padding: 20px 10px 20px 10px;
-    color:white;
+    color: white;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(0,0,0,0.8);
+    background-color: rgb(0, 0, 0, 0.8);
     background-size: cover;
     font-size: small;
     opacity: 0;
@@ -226,25 +251,30 @@ footer {
 .portfolio-img:hover .portfolio-box-contents {
     visibility: visible;
     opacity: 1;
-  }
+}
+
 .portfolio-box-contents h3 {
     font-size: large;
 }
 
+/*Contact*/
+
 .contact-form {
-    color:white;
+    color: white;
     padding: 20px 30px 20px 30px;
     margin-top: 50px;
-    max-width:900px;
+    max-width: 900px;
 }
 
 .contact-form .row {
-    color:black;
-    padding:20px;
+    color: black;
+    padding: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: white;
     border-radius: 1%;
 }
+
+/*Footer*/
 
 .footer-container {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -255,6 +285,8 @@ footer {
     font-family: 'Major Mono Display', monospace;
     font-size: x-large;
 }
+
+/*Media queries*/
 
 @media screen and (max-width: 575px) {
     .justify-content-center {
@@ -268,42 +300,40 @@ footer {
         background-position: center top;
     }
     .mobile-aboutme-img {
-        margin-top:150px;
+        margin-top: 150px;
     }
     .social-img {
-        height:70px;
+        height: 70px;
     }
-    
     .title {
-     font-size: x-large;
+        font-size: x-large;
     }
 }
 
-@media screen and (max-width: 991px) {
+/*@media screen and (max-width: 991px) {}*/
 
-}
 @media screen and (max-width: 767px) {
     .banner-text {
-        font-size:10vmin;
+        font-size: 8vmin;
     }
     .banner-text-name-bold {
-        font-size:6vmin;
+        font-size: 5vmin;
     }
-    .banner-text-name{
-        font-size:5vmin;
+    .banner-text-name {
+        font-size: 4vmin;
     }
     .aboutme-img-box {
-        display:none;
+        display: none;
     }
     .mobile-aboutme-img {
-        display:block;
+        display: block;
     }
     .aboutme-container {
-        padding-bottom:0;
-        margin-top:0;
+        padding-bottom: 0;
+        margin-top: 0;
     }
     .scroll-arrow {
-        width:30px;
-        margin-left:-15px;
+        width: 30px;
+        margin-left: -15px;
     }
 }

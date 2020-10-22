@@ -1,3 +1,4 @@
+// Creates array with all portfolio project data
 const projects = [
     {
         name: "The Bodyweight Gym",
@@ -34,10 +35,10 @@ const projects = [
         url: "https://markwilson107.github.io/Password-Generator/",
         github: "https://github.com/markwilson107/Password-Generator"
     }];
-
+// Creates portfolio grid
 for (var i = 0; i < projects.length; i++) {
     let $col = $("<div>");
-    $col.addClass("col-md-4 portfolio-box fader");
+    $col.addClass("col-md-4 portfolio-box");
     $col.html(`<div style="background-image:url('${projects[i].thumbnail}');" class="portfolio-img" >
     <div class="portfolio-box-contents">
         <h3>${projects[i].name}</h3><br/>
@@ -46,5 +47,6 @@ for (var i = 0; i < projects.length; i++) {
         <a class="btn btn-light" href="${projects[i].github} target="blank_"">Github</a>
     </div>
     </div>`);
+    // Appends the created grid to .portfolio-grid 
     $(".portfolio-grid").append($col);
 }
