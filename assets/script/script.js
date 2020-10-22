@@ -4,8 +4,8 @@ const projects = [
         name: "The Bodyweight Gym",
         description: "Workout web application that helps users with their at home workout routines.",
         thumbnail: "https://user-images.githubusercontent.com/62285850/95646663-8045e500-0afd-11eb-87c6-e2f16b0de9f8.JPG",
-        url: "https://mathew-harvey.github.io/The-Bodyweight-Gym-Online/",
-        github: "https://github.com/Mathew-Harvey/The-Bodyweight-Gym-Online"
+        url: "https://markwilson107.github.io/The-Bodyweight-Gym-Online/",
+        github: "https://github.com/markwilson107/The-Bodyweight-Gym-Online"
     },
     {
         name: "Code Quiz",
