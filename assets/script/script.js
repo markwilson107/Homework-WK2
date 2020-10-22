@@ -44,7 +44,7 @@ for (var i = 0; i < projects.length; i++) {
         <h3>${projects[i].name}</h3><br/>
         <p>${projects[i].description}</p>
         <a class="btn btn-light" href="${projects[i].url}" target="blank_">Demo</a>&nbsp;
-        <a class="btn btn-light" href="${projects[i].github} target="blank_"">Github</a>
+        <a class="btn btn-light" href="${projects[i].github}" target="blank_">Github</a>
     </div>
     </div>`);
     // Appends the created grid to .portfolio-grid 
